@@ -19,8 +19,19 @@ CountdownTimer.prototype = {
 		var min  = Math.floor(timeBetween /    60000 % 60 );
 		var sec  = Math.floor(timeBetween /     1000 % 60 );
 
-		var tempDay = "" + day,
-			tempHour = "" + hour,
+		if(day < 10)
+			tempDay = "0" + day;
+		else
+			tempDay = "" + day;
+
+		if(hour < 10)
+			tempHour = "0" + hour;
+		else
+			tempHour = "" + hour;
+
+		if(min < 10)
+			tempMin = "0" + min;
+		else
 			tempMin = "" + min;
 
 		if(timeBetween > 0){
@@ -29,7 +40,7 @@ CountdownTimer.prototype = {
 			timer += '<div class="countdown--number--wrapper dib vam"><div class="countdown--number--caption">минут</div><div class="countdown--number--item min"><span>' + tempDay.charAt(0) +'</span><span>' + tempMin.charAt(1) + '</span></div></div>';
 			timer += '<div style="display: none;" class="countdown--number--wrapper dib vam"><div class="countdown--number--item sec">' + this.addZero(sec) + '</div><div class="countdown--number--caption">секунд</div></div>';
 			this.elem.innerHTML = timer;
-			tid = setTimeout((function (_this) { return function () { _this.countDown(); }})(this), 1000);
+			tid = setTimeout((function (_this) { return function () { _this.countDown(); }})(this), 100000);
 		}
 		else{
 			this.elem.innerHTML = '<div style="text-align:center;">Ожидаем новости</div>';

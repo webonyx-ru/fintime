@@ -206,16 +206,27 @@ small
         text-align: center
 
 .countdown-form
-    border: 1px solid $greyColorLight
-    border-radius: 10px
+    //border: 1px solid $greyColorLight
+    //border-radius: 10px
     display: inline-block
-    padding: 20px 20px 60px 20px
+    padding: 20px 20px 0 20px
     position: relative
+
+    &:before
+        display: block
+        content: ''
+        position: absolute
+        top: 0
+        right: 0
+        left: 0
+        bottom: 30px
+        border-radius: 10px
+        border: 1px solid #fff
 
     @media only screen and (max-width: 960px)
         margin: 40px 0
 
-    &::before
+    &::after
         position: absolute
         top: -6px
         content: ''
@@ -249,28 +260,26 @@ small
         .countdown-widget-title
             font-size: 18px
 
-        .countdown-widget-info
-            position: absolute
-            bottom: -93px
-            left: 0
-            display: block
-            width: 100%
+.countdown-widget-info
+    display: block
+    width: 100%
+    margin-top: 20px
 
-            .countdown--number--wrapper
-                display: inline-block
+.countdown--number--wrapper
+    display: inline-block
 
-                .countdown--number--caption
-                    font-size: 13px
+.countdown--number--caption
+    font-size: 13px
 
-                .countdown--number--item
+.countdown--number--item
 
-                    span
-                        +sprite(timer-bg)
-                        margin: 5px 2px
-                        line-height: 52px
-                        color: $greyColor
-                        font-size: 36px
-                        font-weight: 600
+    span
+        +sprite(timer-bg)
+        margin: 5px 2px
+        line-height: 52px
+        color: $greyColor
+        font-size: 36px
+        font-weight: 600
 
 .services-section
     background-image: url("../images/slide2-bg.jpg")
