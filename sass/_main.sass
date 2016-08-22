@@ -156,6 +156,7 @@ small
 .header
     position: relative
     height: 100vh
+    overflow: hidden
 
     .video-cont
         position: absolute
@@ -211,6 +212,10 @@ small
     display: inline-block
     padding: 20px 20px 0 20px
     position: relative
+
+    .countdown-form-wrap
+        position: relative
+        z-index: 1
 
     &:before
         display: block
@@ -362,6 +367,7 @@ small
                     color: #fff
                     left: 10%
                     cursor: pointer
+                    outline: none
 
             @media only screen and (max-width: 960px)
                 margin-bottom: 100px
@@ -421,6 +427,38 @@ small
 .footer-info-content
     color: $greyColorLight
     font-size: 14px
+
+.uk-modal-dialog
+    max-width: 300px!important
+    border-radius: 10px
+
+.uk-modal
+    border-radius: 10px
+
+    form
+        .form-title
+            font-size: 20px
+
+        input[type=text]
+            outline: none
+            line-height: 50px
+            padding: 0 20px
+            border-radius: 10px
+            text-align: center
+            border: 1px solid #000000
+            font-size: 18px
+
+        button
+            outline: none
+            line-height: 50px
+            padding: 0 20px
+            border-radius: 10px
+            border: none
+            font-size: 18px
+            text-transform: uppercase
+            cursor: pointer
+            display: block
+            width: 100%
 
 @font-face
     font-family: 'HelveticaNeueCyr-Thin'
