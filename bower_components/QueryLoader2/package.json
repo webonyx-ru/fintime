@@ -1,0 +1,36 @@
+{
+  "name": "queryloader2",
+  "version": "3.2.0",
+  "homepage": "http://gaya.ninja",
+  "description": "QueryLoader2 serves the main purpose of preloading the images on your website by showing an overlay and a loading bar. It automatically fetches all your images and background images and preloads them before showing the webpage.",
+  "dependencies": {
+    "browser-sync": "^2.9.11",
+    "browserify": "^11.2.0",
+    "gulp": "^3.9.0",
+    "gulp-header": "^1.7.1",
+    "gulp-mocha-phantomjs": "^0.10.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-uglify": "^1.4.2",
+    "gulp-watch": "^4.3.5",
+    "jscs": "^2.3.1",
+    "mocha": "^2.3.3",
+    "mocha-phantomjs": "^4.0.1",
+    "vinyl-source-stream": "^1.1.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Gaya/QueryLoader2"
+  },
+  "scripts": {
+    "postinstall": "node ./node_modules/gulp/bin/gulp.js browserify && node ./node_modules/gulp/bin/gulp.js browserify-tests",
+    "test": "node ./node_modules/jscs/bin/jscs src && node ./node_modules/gulp/bin/gulp.js browserify  && node ./node_modules/gulp/bin/gulp.js browserify-tests && node ./node_modules/mocha-phantomjs/bin/mocha-phantomjs test/browser/index.html"
+  },
+  "main": "./src/main.js",
+  "author": {
+    "name": "Gaya Kessler",
+    "email": "hi@gaya.ninja",
+    "url": "http://gaya.ninja/"
+  },
+  "license": "MIT",
+  "devDependencies": {}
+}

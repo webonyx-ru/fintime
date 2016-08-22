@@ -1,0 +1,388 @@
+$lightColor: #fff
+$darkColor: #2b2a29
+$blueColor: #019bdf
+$blueColorDark: #038ac6
+$greyColor: #666666
+$greyColorLight: #a9a9a9
+
+body
+    font-family: 'HelveticaNeueCyr-Light', 'Open Sans', sans-serif
+    font-size: 16px
+    color: $darkColor
+    line-height: 1.2
+
+strong
+    font-family: 'HelveticaNeueCyr-Bold'
+
+small
+    color: $greyColor
+    font-size: 14px
+
+.-font-large
+    font-size: 48px
+
+.-inline-block
+    display: inline-block
+
+.-text-upper
+    text-transform: uppercase
+
+.-color-light
+    color: $lightColor
+
+.-color-dark
+    color: $darkColor
+
+.-color-blue
+    color: $blueColor
+
+.-color-blue--dark
+    color: $blueColorDark
+
+.-color-grey
+    color: $greyColor
+
+.-color-grey--light
+    color: $greyColorLight
+
+.link-blue
+    color: $blueColor
+    text-decoration: underline
+
+    &:hover
+        color: $blueColorDark
+
+.btn-blue
+    background: $blueColor
+
+    &:hover
+        background: $blueColorDark
+
+.link-large
+    font-size: 24px
+
+.section
+    padding: 60px 0
+
+    &::after
+        display: block
+        content: ''
+        clear: both
+
+.section-title
+    font-size: 30px
+    font-weight: 600
+    font-family: 'HelveticaNeueCyr-Bold'
+
+.section-title-small
+    font-size: 18px
+    font-weight: 600
+    font-family: 'HelveticaNeueCyr-Bold'
+
+.section-title-info
+    font-size: 24px
+
+.section-excerpt
+    font-size: 16px
+    font-weight: 300
+
+.section-circle
+    width: 86px
+    height: 86px
+    border: 1px solid transparent
+    text-align: center
+    display: inline-block
+    line-height: 86px
+    border-radius: 50%
+
+.section-circle-small
+    width: 52px
+    height: 52px
+    border: 1px solid transparent
+    text-align: center
+    display: inline-block
+    line-height: 52px
+    border-radius: 50%
+    font-size: 30px
+    color: $blueColor
+
+.section-circle-grey
+    border: 1px solid $greyColorLight
+
+.img-circle
+    border-radius: 50%
+    max-width: 124px
+    max-height: 124px
+
+.large-title
+    font-size: 100px
+    font-weight: 600
+    height: auto
+    line-height: 105px
+    font-family: 'HelveticaNeueCyr-Bold'
+
+.large-info
+    font-size: 30px
+    font-weight: normal
+    line-height: 35px
+    font-family: 'HelveticaNeueCyr-Thin'
+
+.header
+    background-image: url("../images/slide7-bg.jpg")
+    background-repeat: no-repeat
+    background-attachment: fixed
+    background-size: cover
+    height: 100vh
+
+.logo-block
+
+    @media only screen and (max-width: 768px)
+        margin: 0 auto
+        text-align: center
+
+
+.header-title
+    font-size: 24px
+    line-height: 1.2
+
+    @media only screen and (max-width: 768px)
+        text-align: center
+
+.header-title-info
+    font-family: 'HelveticaNeueCyr-Thin'
+    font-size: 24px
+    line-height: 1.2
+
+    @media only screen and (max-width: 768px)
+        text-align: center
+
+.countdown-form
+    border: 1px solid $greyColorLight
+    border-radius: 10px
+    display: inline-block
+    padding: 20px 20px 60px 20px
+    position: relative
+
+    @media only screen and (max-width: 960px)
+        margin: 40px 0
+
+    &::before
+        position: absolute
+        top: -6px
+        content: ''
+        right: -6px
+        +sprite(akciya)
+
+    input[type=text]
+        height: 50px
+        padding: 0 25px
+        border: 1px solid $greyColorLight
+        border-radius: 10px
+        background: transparent
+        font-size: 18px
+        color: $lightColor
+        outline: none
+        text-align: center
+
+    .countdown-form-submit
+        line-height: 50px
+        opacity: 70
+        cursor: pointer
+        border: none
+        display: block
+        width: 100%
+        border-radius: 10px
+        text-transform: uppercase
+
+    .countdown-widget
+        position: relative
+
+        .countdown-widget-title
+            font-size: 18px
+
+        .countdown-widget-info
+            position: absolute
+            bottom: -93px
+            left: 0
+            display: block
+            width: 100%
+
+            .countdown--number--wrapper
+                display: inline-block
+
+                .countdown--number--caption
+                    font-size: 13px
+
+                .countdown--number--item
+
+                    span
+                        +sprite(timer-bg)
+                        margin: 5px 2px
+                        line-height: 52px
+                        color: $greyColor
+                        font-size: 36px
+                        font-weight: 600
+
+.services-section
+    background-image: url("../images/slide2-bg.jpg")
+    background-repeat: no-repeat
+    background-size: cover
+
+    .secvices-point
+        overflow: hidden
+
+        .section-circle-small
+            float: left
+            margin-right: 15px
+        
+        .services-info
+            padding: 0
+            color: $greyColor
+
+.info-section
+    background-image: url("../images/slide3-bg.jpg")
+    background-repeat: no-repeat
+    background-attachment: fixed
+    background-size: cover
+
+    .info-section-list
+
+        > li
+            position: relative
+
+            &::after
+                content: ''
+                +sprite(slide3-dots)
+                position: absolute
+                top: 44px
+                right: -60px
+
+                @media only screen and (max-width: 960px)
+                    display: none
+
+            &:last-child
+                &::after
+                    display: none
+
+    p
+        font-weight: 600
+        font-size: 18px
+        
+.price-list-section
+    
+    .price-list-section-list
+        margin-top: 100px
+        
+        > li
+            .price-list-info
+                position: relative
+                border: 1px solid $greyColorLight
+                border-radius: 10px
+                padding: 20px 20px 40px 20px
+
+                p
+                    font-size: 24px
+                    line-height: 1.2
+
+                .list-title-text
+                    position: absolute
+                    top: -30px
+                    left: 0
+                    display: block
+                    text-align: center
+                    width: 100%
+
+                .price-list-btn
+                    position: absolute
+                    line-height: 50px
+                    bottom: -25px
+                    display: inline-block
+                    width: 80%
+                    border-radius: 10px
+                    border: none
+                    text-transform: uppercase
+                    color: #fff
+                    left: 10%
+                    cursor: pointer
+
+            @media only screen and (max-width: 960px)
+                margin-bottom: 100px
+
+.how-to-start
+    background: #f8f8f8
+
+    .how-to-start-list
+
+        > li
+            position: relative
+
+            &::after
+                content: ''
+                +sprite(slide5-dots)
+                position: absolute
+                top: 44px
+                right: -64px
+
+                @media only screen and (max-width: 960px)
+                    display: none
+
+            &:last-child
+                &::after
+                    display: none
+
+    .popup-btn
+        line-height: 50px
+        border-radius: 10px
+        display: inline-block
+        padding: 0 25px
+        text-transform: uppercase
+        color: #fff
+
+        &:hover
+            text-decoration: none
+
+.stock-section
+    background-image: url("../images/slide7-bg.jpg")
+    background-repeat: no-repeat
+    background-attachment: fixed
+    background-size: cover
+
+.footer
+    background: $darkColor
+
+.footer-top
+    border-bottom: 1px solid $greyColorLight
+
+    @media only screen and (max-width: 960px)
+        text-align: center
+
+.footer-info-title
+    color: $lightColor
+    font-size: 14px
+
+.footer-info-content
+    color: $greyColorLight
+    font-size: 14px
+
+@font-face
+    font-family: 'HelveticaNeueCyr-Thin'
+    src: url("../fonts/HelveticaNeueCyr-Thin.otf")
+
+@font-face
+    font-family: 'HelveticaNeueCyr-UltraLight'
+    src: url("../fonts/HelveticaNeueCyr-UltraLight.otf")
+
+@font-face
+    font-family: 'HelveticaNeueCyr-Bold'
+    src: url("../fonts/HelveticaNeueCyr-Bold.otf")
+
+@font-face
+    font-family: 'HelveticaNeueCyr-Medium'
+    src: url("../fonts/HelveticaNeueCyr-Medium.otf")
+
+@font-face
+    font-family: 'HelveticaNeueCyr-Light'
+    src: url("../fonts/HelveticaNeueCyr-Light.otf")
+
+
+
