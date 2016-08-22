@@ -747,6 +747,7 @@ small {
 .countdown-form::after {
   position: absolute;
   top: -6px;
+  z-index: 2;
   content: "";
   right: -6px;
   background-image: url('../images/icons-sa2a2b33a25.png');
