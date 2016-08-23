@@ -786,6 +786,9 @@ small {
   color: #fff;
   outline: none;
   text-align: center;
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
 }
 .countdown-form .countdown-form-submit {
   line-height: 50px;
