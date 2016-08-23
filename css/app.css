@@ -483,10 +483,6 @@
   }
 }
 
-html, body {
-  height: 100%;
-}
-
 body {
   font-family: "HelveticaNeueCyr-Light", "Open Sans", sans-serif;
   font-size: 16px;
@@ -624,15 +620,27 @@ small {
   font-size: 100px;
   font-weight: 600;
   height: auto;
-  line-height: 105px;
+  line-height: 1.5;
   font-family: "HelveticaNeueCyr-Bold";
+}
+@media only screen and (max-width: 960px) {
+  .large-title {
+    font-size: 48px;
+    line-height: 1.2;
+  }
 }
 
 .large-info {
   font-size: 30px;
   font-weight: normal;
-  line-height: 35px;
+  line-height: 1.5;
   font-family: "HelveticaNeueCyr-Thin";
+}
+@media only screen and (max-width: 960px) {
+  .large-info {
+    font-size: 25px;
+    line-height: 1.2;
+  }
 }
 
 .uk-offcanvas-bar {
@@ -985,6 +993,13 @@ small {
 }
 .how-to-start .popup-btn:hover {
   text-decoration: none;
+}
+
+.load-more {
+  background: none;
+  border: none;
+  cursor: pointer;
+  outline: none;
 }
 
 .stock-section {

@@ -1,8 +1,8 @@
 $(document).ready(function(){
-
+    $('.phone-mask').mask('(000) 000-0000');
 });
 
-/*
+
 window.addEventListener('DOMContentLoaded', function() {
     QueryLoader2(document.querySelector("body"), {
         barColor: "#efefef",
@@ -12,4 +12,4 @@ window.addEventListener('DOMContentLoaded', function() {
         minimumTime: 200,
         fadeOutTime: 1000
     });
-});*/
+});

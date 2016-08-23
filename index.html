@@ -53,7 +53,7 @@
                         <div class="countdown-form-widget uk-text-left uk-visible-large">
                             <form action="" class="countdown-form">
                                 <div class="countdown-form-wrap">
-                                    <p><input type="text" name="" placeholder="Ваш телефон" class="-color-light"></p>
+                                    <p><input type="text" name="" placeholder="Ваш телефон" class="phone-mask -color-light"></p>
                                     <p><input type="text" name="" placeholder="Ваше имя" class="-color-light"></p>
                                     <p><button type="submit" class="countdown-form-submit btn-blue -color-light">отправить заявку</button></p>
                                     <div class="countdown-widget -margin-top-30">
@@ -243,27 +243,27 @@
             <h3 class="section-title-info uk-text-center -margin-bottom-60" data-uk-scrollspy="{cls:'uk-animation-fade', delay: 300}">Чтобы начать с нами работать нужно пройти <br><strong>всего 4 шага</strong></h3>
             <ul class="how-to-start-list uk-text-center uk-grid uk-grid-large uk-grid-sidth-small-1-1 uk-grid-width-medium-1-3 uk-grid-width-large-1-5" data-uk-grid-margin>
                 <li data-uk-scrollspy="{cls:'uk-animation-scale-down', delay: 100}">
-                    <div class="section-circle section-circle-grey"><i class="fri fri-wallet"></i></div>
+                    <div class="section-circle section-circle-grey"><i class="fri fri-paper"></i></div>
                     <p class="section-title-small">Заявка</p>
                     <p class="section-excerpt">Позвоните нам или оставьте заявку – наш сотрудник свяжется с Вами в ближайшее время.</p>
                 </li>
                 <li data-uk-scrollspy="{cls:'uk-animation-scale-down', delay: 200}">
-                    <div class="section-circle section-circle-grey"><i class="fri fri-wallet"></i></div>
+                    <div class="section-circle section-circle-grey"><i class="fri fri-analyze"></i></div>
                     <p class="section-title-small">Анализ <br>и оценка</p>
                     <p class="section-excerpt">В беседе мы узнаем специфику и детали Вашего бизнеса, чтобы уточнить стоимость обслуживания.</p>
                 </li>
                 <li data-uk-scrollspy="{cls:'uk-animation-scale-down', delay: 300}">
-                    <div class="section-circle section-circle-grey"><i class="fri fri-wallet"></i></div>
+                    <div class="section-circle section-circle-grey"><i class="fri fri-meeting"></i></div>
                     <p class="section-title-small">Встреча</p>
                     <p class="section-excerpt">При необходимости мы встретимся с Вами для обсуждения детализации.</p>
                 </li>
                 <li data-uk-scrollspy="{cls:'uk-animation-scale-down', delay: 200}">
-                    <div class="section-circle section-circle-grey"><i class="fri fri-wallet"></i></div>
+                    <div class="section-circle section-circle-grey"><i class="fri fri-awward"></i></div>
                     <p class="section-title-small">Подписание договора</p>
                     <p class="section-excerpt">После координации стоимости услуг заключаем договор с Вашим предприятием.</p>
                 </li>
                 <li data-uk-scrollspy="{cls:'uk-animation-scale-down', delay: 100}">
-                    <div class="section-circle section-circle-grey"><i class="fri fri-wallet"></i></div>
+                    <div class="section-circle section-circle-grey"><i class="fri fri-partners"></i></div>
                     <p class="section-title-small">Партнеры</p>
                     <p class="section-excerpt">Вы забываете о финансовой отчетности и занимаетесь рабочими вопросами, а мы делаем эту работу за Вас.</p>
                 </li>
@@ -307,8 +307,37 @@
                     </p>
                 </article>
             </div>
-            <div class="uk-text-center -margin-top-40">
-                <a href="#" class="link-blue link-large">Показать еще </a><span> &blacktriangledown;</span>
+
+            <div id="more-clients" class="uk-hidden uk-grid uk-grid-large uk-text-center uk-grid-width-small-1-1 uk-grid-width-medium-1-3" data-uk-grid-margin>
+                <article>
+                    <img src="images/ava1.png" alt="" class="img-circle"><!-- width: 124, height: 124, 1x1 -->
+                    <p class="section-title-small">Юлия <br>Директор ТОО "Абсолют"</p>
+                    <p class="section-excerpt">
+                        Бухгалтерская фирма предоставляет бухгалтерские услуги нашей компании. <br>
+                        Подкупают профессионализм, доброжелательность, исполнительность и ответственность сотрудников компании. <br>
+                        Успехов вам!</p>
+                </article>
+                <article>
+                    <img src="images/ava2.png" alt="" class="img-circle"><!-- width: 124, height: 124, 1x1 -->
+                    <p class="section-title-small">Григорий <br>Директор ТОО "Элим Плюс"</p>
+                    <p class="section-excerpt">
+                        Бухгалтерская фирма предоставляет бухгалтерские услуги нашей компании. <br>
+                        Подкупают профессионализм, доброжелательность, исполнительность и ответственность сотрудников компании. <br>
+                        Успехов вам!
+                    </p>
+                </article>
+                <article>
+                    <img src="images/ava3.png" alt="" class="img-circle"><!-- width: 124, height: 124, 1x1 -->
+                    <p class="section-title-small">Кристина <br>Директор ТОО "Экзо"</p>
+                    <p class="section-excerpt">
+                        Бухгалтерская фирма предоставляет бухгалтерские услуги нашей компании. <br>
+                        Подкупают профессионализм, доброжелательность, исполнительность и ответственность сотрудников компании. <br>
+                        Успехов вам!
+                    </p>
+                </article>
+            </div>
+            <div class="uk-text-center -margin-top-40 -margin-bottom-40">
+                <button data-uk-toggle="{target: '#more-clients', animation:'uk-animation-slide-top, uk-animation-slide-top'}" class="load-more link-blue link-large">Показать еще </a><span> &blacktriangledown;</span></button>
             </div>
         </section>
     </div><!-- Our clients section end -->
@@ -328,7 +357,7 @@
                 <div class="countdown-form-widget uk-text-center">
                     <form action="" class="countdown-form">
                         <div class="countdown-form-wrap">
-                            <p><input type="text" name="" placeholder="Ваш телефон" class="-color-light"></p>
+                            <p><input type="text" name="" placeholder="Ваш телефон" class="phone-mask -color-light"></p>
                             <p><input type="text" name="" placeholder="Ваше имя" class="-color-light"></p>
                             <p><button type="submit" class="countdown-form-submit btn-blue -color-light">отправить заявку</button></p>
                             <div class="countdown-widget -margin-top-30">
@@ -401,7 +430,7 @@
                     Закажите услугу и наш <br>
                     менеджер свяжется с Вами
                 </p>
-                <p><input type="text" name="" placeholder="Ваш телефон"></p>
+                <p><input type="text" name="" placeholder="Ваш телефон" class="phone-mask"></p>
                 <p><input type="text" name="" placeholder="Ваше имя"></p>
                 <p><button type="submit" class="btn-blue -color-light">заказать</button></p>
             </form>
@@ -414,7 +443,8 @@
     <script src="bower_components/uikit/js/components/sticky.min.js"></script>
     <script src="bower_components/uikit/js/components/parallax.min.js"></script>
     <script src="js/countdown.js"></script>
-    <!--<script src="bower_components/QueryLoader2/queryloader2.min.js"></script>-->
+    <script src="js/jquery.mask.min.js"></script>
+    <script src="bower_components/QueryLoader2/queryloader2.min.js"></script>
     <script src="js/app.js"></script>
 </body>
 </html>
