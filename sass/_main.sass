@@ -61,6 +61,11 @@ small
 .link-large
     font-size: 24px
 
+.wrap
+    position: relative
+    z-index: 3
+    background: #fff
+
 .section
     padding: 80px 0
 
@@ -172,7 +177,7 @@ small
 
 
     .video-cont
-        position: absolute
+        position: fixed
         height: 100%
         width: 100%
         z-index: 2
@@ -189,6 +194,7 @@ small
         @media only screen and (max-width: 959px)
             background-image: url("../images/header-bg.jpg")
             background-size: cover
+            background-attachment: fixed
             height: auto
 
     .header-right-content
