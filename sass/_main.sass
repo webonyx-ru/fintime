@@ -62,7 +62,7 @@ small
     font-size: 24px
 
 .section
-    padding: 60px 0
+    padding: 80px 0
 
     &::after
         display: block
@@ -163,11 +163,10 @@ small
     height: 100vh
     overflow: hidden
 
-    @media only screen and (max-width: 960px)
-        height: auto
-        min-height: 500px
+    .header-section-wrap
+        position: relative
 
-    @media only screen and (max-width: 768px)
+    @media only screen and (max-width: 959px)
         height: auto
         min-height: 500px
 
@@ -185,28 +184,32 @@ small
         background: rgba(17,40,63,.8)
         height: 100vh
         box-sizing: border-box
+        min-height: 600px
 
-        @media only screen and (max-width: 960px)
-            height: auto
-            min-height: 500px
-
-        @media only screen and (max-width: 768px)
+        @media only screen and (max-width: 959px)
             background-image: url("../images/header-bg.jpg")
             background-size: cover
             height: auto
-            min-height: 500px
 
     .header-right-content
-        position: relative
 
-        .header-menu-btn
-            position: absolute
-            top: 0
-            right: 25px
-            color: #fff
-            padding: 15px
-            border: 1px solid #fff
-            border-radius: 10px
+        @media only screen and (max-width: 959px)
+            text-align: center
+
+    .header-left-content
+
+        @media only screen and (max-width: 959px)
+            text-align: center
+
+
+    .header-menu-btn
+        position: absolute
+        top: 0
+        right: 25px
+        color: #fff
+        padding: 15px
+        border: 1px solid #fff
+        border-radius: 10px
 
 .logo-block
 
@@ -240,6 +243,11 @@ small
     .countdown-form-wrap
         position: relative
         z-index: 1
+
+    .countdown-form-title
+        font-family: 'HelveticaNeueCyr-Bold', serif
+        font-size: 18px
+        margin: 20px 0
 
     &:before
         display: block

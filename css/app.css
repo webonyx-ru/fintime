@@ -555,7 +555,7 @@ small {
 }
 
 .section {
-  padding: 60px 0;
+  padding: 80px 0;
 }
 .section::after {
   display: block;
@@ -672,13 +672,10 @@ small {
   height: 100vh;
   overflow: hidden;
 }
-@media only screen and (max-width: 960px) {
-  .header {
-    height: auto;
-    min-height: 500px;
-  }
+.header .header-section-wrap {
+  position: relative;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 959px) {
   .header {
     height: auto;
     min-height: 500px;
@@ -697,25 +694,26 @@ small {
   background: rgba(17, 40, 63, 0.8);
   height: 100vh;
   box-sizing: border-box;
+  min-height: 600px;
 }
-@media only screen and (max-width: 960px) {
-  .header .header-section {
-    height: auto;
-    min-height: 500px;
-  }
-}
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 959px) {
   .header .header-section {
     background-image: url("../images/header-bg.jpg");
     background-size: cover;
     height: auto;
-    min-height: 500px;
   }
 }
-.header .header-right-content {
-  position: relative;
+@media only screen and (max-width: 959px) {
+  .header .header-right-content {
+    text-align: center;
+  }
 }
-.header .header-right-content .header-menu-btn {
+@media only screen and (max-width: 959px) {
+  .header .header-left-content {
+    text-align: center;
+  }
+}
+.header .header-menu-btn {
   position: absolute;
   top: 0;
   right: 25px;
@@ -761,6 +759,11 @@ small {
 .countdown-form .countdown-form-wrap {
   position: relative;
   z-index: 1;
+}
+.countdown-form .countdown-form-title {
+  font-family: "HelveticaNeueCyr-Bold", serif;
+  font-size: 18px;
+  margin: 20px 0;
 }
 .countdown-form:before {
   display: block;
