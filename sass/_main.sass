@@ -63,7 +63,7 @@ small
 
 .wrap
     position: relative
-    z-index: 3
+    z-index: 6
     background: #fff
 
 .section
@@ -184,7 +184,10 @@ small
         object-fit: cover
 
     .header-section
-        position: relative
+        position: fixed
+        width: 100%
+        top: 0
+        left: 0
         z-index: 5
         background: rgba(17,40,63,.8)
         height: 100vh
@@ -196,6 +199,7 @@ small
             background-size: cover
             background-attachment: fixed
             height: auto
+            position: relative
 
     .header-right-content
 
