@@ -34,10 +34,16 @@ CountdownTimer.prototype = {
 		else
 			tempMin = "" + min;
 
+		if(sec < 10)
+			tempSec = "0" + sec;
+		else
+			tempSec = "" + sec;
+
+
 		if(timeBetween > 0){
-			timer += '<div class="countdown--number--wrapper dib vam"><div class="countdown--number--caption">дней</div><div class="countdown--number--item day"><span>' + tempDay.charAt(0) +'</span><span>' + tempDay.charAt(1) + '</span></div></div>';
-			timer += '<div class="countdown--number--wrapper dib vam"><div class="countdown--number--caption">часов</div><div class="countdown--number--item hour"><span>' + tempDay.charAt(0) +'</span><span>' + tempHour.charAt(1) + '</span></div></div>';
-			timer += '<div class="countdown--number--wrapper dib vam"><div class="countdown--number--caption">минут</div><div class="countdown--number--item min"><span>' + tempDay.charAt(0) +'</span><span>' + tempMin.charAt(1) + '</span></div></div>';
+			timer += '<div class="countdown--number--wrapper dib vam"><div class="countdown--number--caption">часов</div><div class="countdown--number--item day"><span>' + tempHour.charAt(0) +'</span><span>' + tempHour.charAt(1) + '</span></div></div>';
+			timer += '<div class="countdown--number--wrapper dib vam"><div class="countdown--number--caption">минут</div><div class="countdown--number--item hour"><span>' + tempMin.charAt(0) +'</span><span>' + tempMin.charAt(1) + '</span></div></div>';
+			timer += '<div class="countdown--number--wrapper dib vam"><div class="countdown--number--caption">секунд</div><div class="countdown--number--item min"><span>' + tempSec.charAt(0) +'</span><span>' + tempSec.charAt(1) + '</span></div></div>';
 			timer += '<div style="display: none;" class="countdown--number--wrapper dib vam"><div class="countdown--number--item sec">' + this.addZero(sec) + '</div><div class="countdown--number--caption">секунд</div></div>';
 			this.elem.innerHTML = timer;
 			tid = setTimeout((function (_this) { return function () { _this.countDown(); }})(this), 100000);
@@ -52,7 +58,7 @@ CountdownTimer.prototype = {
 		return ('0' + num).slice(-2);
 
 	}
-}
+};
 
 function CDT(){
 	// Set countdown limit
@@ -76,4 +82,7 @@ function CDT(){
 
 window.onload=function(){
 	CDT();
-}
+	setInterval(function () {
+		CDT();
+	}, 1000);
+};
