@@ -1,0 +1,547 @@
+$lightColor: #fff
+$darkColor: #2b2a29
+$blueColor: #019bdf
+$blueColorDark: #038ac6
+$greyColor: #666666
+$greyColorLight: #a9a9a9
+
+body
+    font-family: 'HelveticaNeueCyr-Light', 'Open Sans', sans-serif
+    font-size: 16px
+    color: $darkColor
+    line-height: 1.2
+
+strong
+    font-family: 'HelveticaNeueCyr-Bold'
+
+small
+    color: $greyColor
+    font-size: 14px
+
+.-font-large
+    font-size: 48px
+
+.-inline-block
+    display: inline-block
+
+.-text-upper
+    text-transform: uppercase
+
+.-color-light
+    color: $lightColor
+
+.-color-dark
+    color: $darkColor
+
+.-color-blue
+    color: $blueColor
+
+.-color-blue--dark
+    color: $blueColorDark
+
+.-color-grey
+    color: $greyColor
+
+.-color-grey--light
+    color: $greyColorLight
+
+.link-blue
+    color: $blueColor
+    text-decoration: underline
+
+    &:hover
+        color: $blueColorDark
+
+.btn-blue
+    background: $blueColor
+
+    &:hover
+        background: $blueColorDark
+
+.link-large
+    font-size: 24px
+
+.wrap
+    position: relative
+    z-index: 6
+    background: #fff
+
+.section
+    padding: 80px 0
+
+    &::after
+        display: block
+        content: ''
+        clear: both
+
+.section-title
+    font-size: 30px
+    font-weight: 600
+    font-family: 'HelveticaNeueCyr-Bold'
+
+.section-title-small
+    font-size: 18px
+    font-weight: 600
+    font-family: 'HelveticaNeueCyr-Bold'
+
+.section-title-info
+    font-size: 24px
+
+.section-excerpt
+    font-size: 16px
+    font-weight: 300
+
+.section-circle
+    width: 86px
+    height: 86px
+    border: 1px solid transparent
+    text-align: center
+    display: inline-block
+    line-height: 86px
+    border-radius: 50%
+
+.section-circle-small
+    width: 52px
+    height: 52px
+    border: 1px solid transparent
+    text-align: center
+    display: inline-block
+    line-height: 52px
+    border-radius: 50%
+    font-size: 30px
+    color: $blueColor
+
+.section-circle-grey
+    border: 1px solid $greyColorLight
+
+.img-circle
+    border-radius: 50%
+    max-width: 124px
+    max-height: 124px
+
+.large-title
+    font-size: 100px
+    font-weight: 600
+    height: auto
+    line-height: 1.5
+    font-family: 'HelveticaNeueCyr-Bold'
+
+    @media only screen and (max-width: 960px)
+        font-size: 48px
+        line-height: 1.2
+
+.large-info
+    font-size: 30px
+    font-weight: normal
+    line-height: 1.5
+    font-family: 'HelveticaNeueCyr-Thin'
+
+    @media only screen and (max-width: 960px)
+        font-size: 25px
+        line-height: 1.2
+
+.uk-offcanvas-bar
+    background: repeating-linear-gradient(45deg, #6897c8, #6897c8 5px, #6094cb 5px, #6094cb 10px)
+    color: #fff
+    text-shadow: none
+
+.uk-nav-offcanvas
+    > li
+        > a
+            color: $lightColor
+
+            &:hover
+                background: #0774bc!important
+
+.header-top-bar-menu
+    background: #0774bc
+    z-index: 8
+
+    a
+        color: #fff
+
+        &:hover
+            color: #fff
+
+.header
+    position: relative
+    height: 100vh
+    overflow: hidden
+
+    .header-section-wrap
+        position: relative
+
+    @media only screen and (max-width: 959px)
+        height: auto
+        min-height: 500px
+
+
+    .video-cont
+        position: fixed
+        height: 100%
+        width: 100%
+        z-index: 2
+        object-fit: cover
+
+    .header-section
+        position: fixed
+        width: 100%
+        top: 0
+        left: 0
+        z-index: 5
+        background: rgba(17,40,63,.7)
+        height: 100vh
+        box-sizing: border-box
+        min-height: 600px
+
+        @media only screen and (max-width: 959px)
+            background-image: url("../images/header-bg.jpg")
+            background-size: cover
+            background-attachment: fixed
+            height: auto
+            position: relative
+
+    .header-right-content
+
+        @media only screen and (max-width: 959px)
+            text-align: center
+
+    .header-left-content
+
+        @media only screen and (max-width: 959px)
+            text-align: center
+
+
+    .header-menu-btn
+        position: absolute
+        top: 0
+        right: 25px
+        color: #fff
+        padding: 15px
+        border: 1px solid #fff
+        border-radius: 10px
+
+.logo-block
+
+    @media only screen and (max-width: 768px)
+        margin: 0 auto
+        text-align: center
+
+
+.header-title
+    font-size: 24px
+    line-height: 1.2
+
+    @media only screen and (max-width: 768px)
+        text-align: center
+
+.header-title-info
+    font-family: 'HelveticaNeueCyr-Thin'
+    font-size: 24px
+    line-height: 1.2
+
+    @media only screen and (max-width: 768px)
+        text-align: center
+
+.countdown-form
+    //border: 1px solid $greyColorLight
+    //border-radius: 10px
+    display: inline-block
+    padding: 20px 20px 0 20px
+    position: relative
+
+    .countdown-form-wrap
+        position: relative
+        z-index: 1
+
+    .countdown-form-title
+        font-family: 'HelveticaNeueCyr-Bold', serif
+        font-size: 18px
+        margin: 20px 0
+
+    &:before
+        display: block
+        content: ''
+        position: absolute
+        top: 0
+        right: 0
+        left: 0
+        bottom: 30px
+        border-radius: 10px
+        border: 1px solid #fff
+
+    @media only screen and (max-width: 960px)
+        margin: 40px 0
+
+    &::after
+        position: absolute
+        top: -6px
+        z-index: 2
+        content: ''
+        right: -6px
+        +sprite(akciya)
+
+    input[type=text]
+        height: 50px
+        padding: 0 25px
+        border: 1px solid $greyColorLight
+        border-radius: 10px
+        background: transparent
+        font-size: 18px
+        color: $lightColor
+        outline: none
+        text-align: center
+        display: block
+        width: 100%
+        box-sizing: border-box
+
+    .countdown-form-submit
+        line-height: 50px
+        opacity: 70
+        cursor: pointer
+        border: none
+        display: block
+        width: 100%
+        border-radius: 10px
+        text-transform: uppercase
+
+    .countdown-widget
+        position: relative
+
+        .countdown-widget-title
+            font-size: 18px
+
+.countdown-widget-info
+    display: block
+    width: 100%
+    margin-top: 20px
+
+.countdown--number--wrapper
+    display: inline-block
+
+.countdown--number--caption
+    font-size: 13px
+
+.countdown--number--item
+
+    span
+        +sprite(timer-bg)
+        margin: 5px 2px
+        line-height: 52px
+        color: $greyColor
+        font-size: 36px
+        font-weight: 600
+
+.services-section
+    background-image: url("../images/slide2-bg.jpg")
+    background-repeat: no-repeat
+    background-size: cover
+
+    .secvices-point
+        overflow: hidden
+
+        .section-circle-small
+            float: left
+            margin-right: 15px
+        
+        .services-info
+            padding: 0
+            color: $greyColor
+
+.info-section
+    background-image: url("../images/slide3-bg.jpg")
+    background-repeat: no-repeat
+    background-attachment: fixed
+    background-size: cover
+
+    .info-section-list
+
+        > li
+            position: relative
+
+            &::after
+                content: ''
+                +sprite(slide3-dots)
+                position: absolute
+                top: 44px
+                right: -60px
+
+                @media only screen and (max-width: 960px)
+                    display: none
+
+            &:last-child
+                &::after
+                    display: none
+
+    p
+        font-weight: 600
+        font-size: 18px
+        
+.price-list-section
+    
+    .price-list-section-list
+        margin-top: 100px
+        
+        > li
+            .price-list-info
+                position: relative
+                border: 1px solid $greyColorLight
+                border-radius: 10px
+                padding: 20px 20px 40px 20px
+
+                p
+                    font-size: 24px
+                    line-height: 1.2
+
+                .list-title-text
+                    position: absolute
+                    top: -30px
+                    left: 0
+                    display: block
+                    text-align: center
+                    width: 100%
+
+                .price-list-btn
+                    position: absolute
+                    line-height: 50px
+                    bottom: -25px
+                    display: inline-block
+                    width: 80%
+                    border-radius: 10px
+                    border: none
+                    text-transform: uppercase
+                    color: #fff
+                    left: 10%
+                    cursor: pointer
+                    outline: none
+
+            @media only screen and (max-width: 960px)
+                margin-bottom: 100px
+
+.how-to-start
+    background: #f8f8f8
+
+    .how-to-start-list
+
+        > li
+            position: relative
+
+            &::after
+                content: ''
+                +sprite(slide5-dots)
+                position: absolute
+                top: 44px
+                right: -64px
+
+                @media only screen and (max-width: 960px)
+                    display: none
+
+            &:last-child
+                &::after
+                    display: none
+
+    .popup-btn
+        line-height: 50px
+        border-radius: 10px
+        display: inline-block
+        padding: 0 25px
+        text-transform: uppercase
+        color: #fff
+
+        &:hover
+            text-decoration: none
+.load-more
+    background: none
+    border: none
+    cursor: pointer
+    outline: none
+    position: relative
+
+    span
+        position: absolute
+        left: 100%
+        //line-height: 40px
+        margin-left: 5px
+        top: 0
+
+.stock-section
+    background-image: url("../images/slide7-bg.jpg")
+    background-repeat: no-repeat
+    background-attachment: fixed
+    background-size: cover
+
+.footer
+    background: $darkColor
+
+.footer-top
+    border-bottom: 1px solid $greyColorLight
+
+    @media only screen and (max-width: 960px)
+        text-align: center
+
+.footer-info-title
+    color: $lightColor
+    font-size: 14px
+
+.footer-info-content
+    color: $greyColorLight
+    font-size: 14px
+
+.uk-modal-dialog
+    max-width: 300px!important
+    border-radius: 10px
+
+.uk-modal
+    border-radius: 10px
+
+    form
+        .form-title
+            font-size: 20px
+
+        input[type=text]
+            outline: none
+            line-height: 50px
+            padding: 0 20px
+            border-radius: 10px
+            text-align: center
+            border: 1px solid #000000
+            font-size: 18px
+
+        button
+            outline: none
+            line-height: 50px
+            padding: 0 20px
+            border-radius: 10px
+            border: none
+            font-size: 18px
+            text-transform: uppercase
+            cursor: pointer
+            display: block
+            width: 100%
+
+#page-reasons
+    li
+        margin-top: 40px
+
+@font-face
+    font-family: 'HelveticaNeueCyr-Thin'
+    src: url("../fonts/HelveticaNeueCyr-Thin.otf")
+
+@font-face
+    font-family: 'HelveticaNeueCyr-UltraLight'
+    src: url("../fonts/HelveticaNeueCyr-UltraLight.otf")
+
+@font-face
+    font-family: 'HelveticaNeueCyr-Bold'
+    src: url("../fonts/HelveticaNeueCyr-Bold.otf")
+
+@font-face
+    font-family: 'HelveticaNeueCyr-Medium'
+    src: url("../fonts/HelveticaNeueCyr-Medium.otf")
+
+@font-face
+    font-family: 'HelveticaNeueCyr-Light'
+    src: url("../fonts/HelveticaNeueCyr-Light.otf")
+
+
+
