@@ -705,6 +705,9 @@ small {
   box-sizing: border-box;
   min-height: 600px;
 }
+.header .header-section .uk-container {
+  position: relative;
+}
 @media only screen and (max-width: 959px) {
   .header .header-section {
     background-image: url("../images/header-bg.jpg");
