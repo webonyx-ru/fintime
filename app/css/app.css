@@ -576,7 +576,7 @@ small {
 }
 
 .section-title-small {
-  font-size: 18px;
+  font-size: 22px;
   font-weight: 600;
   font-family: "HelveticaNeueCyr-Bold";
 }
@@ -586,7 +586,7 @@ small {
 }
 
 .section-excerpt {
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 300;
 }
 
@@ -634,6 +634,10 @@ small {
     font-size: 48px;
     line-height: 1.2;
   }
+}
+
+.stock-section .large-title {
+  font-size: 48px;
 }
 
 .large-info {
@@ -795,30 +799,6 @@ small {
     margin: 40px 0;
   }
 }
-.countdown-form::after {
-  position: absolute;
-  top: -6px;
-  z-index: 2;
-  content: "";
-  right: -6px;
-  background-image: url('../images/icons-sa2a2b33a25.png');
-  background-position: 0 0;
-  background-repeat: no-repeat;
-  overflow: hidden;
-  display: inline-block;
-  vertical-align: middle;
-  height: 124px;
-  width: 124px;
-}
-@media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3 / 2), (min-resolution: 1.5dppx) {
-  .countdown-form::after {
-    background-image: url('../images/icons-2x-s10a59a911d.png');
-    background-size: 62px auto;
-    background-position: 0 0;
-    height: 62px;
-    width: 62px;
-  }
-}
 .countdown-form input[type=text] {
   height: 50px;
   padding: 0 25px;
@@ -904,6 +884,7 @@ small {
 .services-section .secvices-point .services-info {
   padding: 0;
   color: #666666;
+  font-size: 18px;
 }
 
 .info-section {

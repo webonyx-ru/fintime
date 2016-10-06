@@ -80,7 +80,7 @@ small
     font-family: 'HelveticaNeueCyr-Bold'
 
 .section-title-small
-    font-size: 18px
+    font-size: 22px
     font-weight: 600
     font-family: 'HelveticaNeueCyr-Bold'
 
@@ -88,7 +88,7 @@ small
     font-size: 24px
 
 .section-excerpt
-    font-size: 16px
+    font-size: 18px
     font-weight: 300
 
 .section-circle
@@ -130,6 +130,9 @@ small
         font-size: 48px
         line-height: 1.2
 
+.stock-section
+    .large-title
+        font-size: 48px
 .large-info
     font-size: 30px
     font-weight: normal
@@ -276,13 +279,13 @@ small
     @media only screen and (max-width: 960px)
         margin: 40px 0
 
-    &::after
-        position: absolute
-        top: -6px
-        z-index: 2
-        content: ''
-        right: -6px
-        +sprite(akciya)
+    //&::after
+    //    position: absolute
+    //    top: -6px
+    //    z-index: 2
+    //    content: ''
+    //    right: -6px
+    //    +sprite(akciya)
 
     input[type=text]
         height: 50px
@@ -350,6 +353,7 @@ small
         .services-info
             padding: 0
             color: $greyColor
+            font-size: 18px
 
 .info-section
     background-image: url("../images/slide3-bg.jpg")
